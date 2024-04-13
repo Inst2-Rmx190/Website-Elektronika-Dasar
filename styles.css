@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  color: black; /* Mengembalikan warna teks menjadi hitam */
+
+}
+
+.navbar {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000px;
+  top: 0;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.promosi-section {
+  padding: 80px 20px 20px; /* Menambahkan padding atas agar konten tidak tertutup oleh navbar */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px; /* Mengubah margin bottom agar terlihat lebih baik */
+}
+
+.card video, .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin-bottom: 15px;
+}
+
+.card-info a {
+  text-decoration: none;
+  color: #333; /* Mengembalikan warna link menjadi hitam */
+}
+
+.card-info a:hover {
+  color: #ffcc00;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card-info .separator {
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Aturan CSS lainnya untuk navbar */
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  color: blu; /* Ubah warna teks saat dihover atau difokuskan */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna hitam semi-transparent */
+  z-index: -1; /* Pastikan overlay berada di belakang konten lainnya */
+}
